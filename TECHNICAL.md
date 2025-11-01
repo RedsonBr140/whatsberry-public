@@ -937,7 +937,7 @@ NODE_ENV=production
 
 **Generate a secure API key:**
 ```bash
-node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+openssl rand -hex 32
 ```
 
 ---
