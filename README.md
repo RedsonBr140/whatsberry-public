@@ -75,14 +75,14 @@ Edit the `.env` file and set your configuration:
 PORT=3000
 
 # API Key - Generate a secure random string
-# You can generate one with: node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+# You can generate one with: openssl rand -hex 32
 API_KEY=your_secure_api_key_here
 ```
 
 **Important:** Generate a strong API key for security. You can use this command:
 
 ```bash
-node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+openssl rand -hex 32
 ```
 
 ### Step 4: Start the Server
